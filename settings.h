@@ -45,7 +45,7 @@ const int SLEEP_INTERVAL_SECS = 0;   // Going to Sleep after idle times, set 0 f
 // https://home.openweathermap.org/users/sign_up
 const boolean IS_METRIC = true;
 String OPEN_WEATHER_MAP_APP_ID = "6bdd4d9d45a97d690103477a4c67c38f";
-String OPEN_WEATHER_MAP_LOCATION = "Zurich,CH";
+String OPEN_WEATHER_MAP_LOCATION = "Athens,GR";
 
 // Pick a language code from this list:
 // Arabic - ar, Bulgarian - bg, Catalan - ca, Czech - cz, German - de, Greek - el,
@@ -65,9 +65,9 @@ const String MONTH_NAMES[] = {"JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "
 const String MOON_PHASES[] = {"New Moon", "Waxing Crescent", "First Quarter", "Waxing Gibbous",
                               "Full Moon", "Waning Gibbous", "Third quarter", "Waning Crescent"};
 
-#define UTC_OFFSET +1
-struct dstRule StartRule = {"CEST", Last, Sun, Mar, 2, 3600}; // Central European Summer Time = UTC/GMT +2 hours
-struct dstRule EndRule = {"CET", Last, Sun, Oct, 2, 0};       // Central European Time = UTC/GMT +1 hour
+#define UTC_OFFSET +2
+struct dstRule StartRule = {"EEST", Last, Sun, Mar, 2, 3600}; // Eastern European Summer Time = UTC/GMT +3 hours
+struct dstRule EndRule = {"EET", Last, Sun, Oct, 2, 0};       // Eastern European Time = UTC/GMT +2 hour
 
 // Settings for Boston
 // #define UTC_OFFSET -5
