@@ -138,6 +138,7 @@ void connectWifi() {
   Serial.print(WIFI_SSID);
   Serial.print("/");
   Serial.println(WIFI_PASS);
+  WiFi.disconnect();
   WiFi.mode(WIFI_STA);
   WiFi.hostname(WIFI_HOSTNAME);
   WiFi.begin(WIFI_SSID,WIFI_PASS);
